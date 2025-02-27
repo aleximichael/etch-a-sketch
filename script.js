@@ -37,7 +37,7 @@ function getRandomColour(alpha) {
     return `rgb(${r}, ${g}, ${b}, ${alpha})`;
 }
 
-const gridBtn = document.querySelector(".grid-size");
+const gridBtn = document.querySelector(".reset-button");
 
 gridBtn.addEventListener("click", ()=> {
     newGridSize = +prompt("How many squares wide?");

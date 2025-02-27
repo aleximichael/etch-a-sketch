@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#grid-container {
+    display: flex;
+    border: 1px solid black;
+
+}
+
+.col-container {
+    flex: auto;
+    display: flex; 
+    flex-direction: column;  */
+}
+
+.grid {
+    height: 5vh;
+    border: 1px solid black;
+}

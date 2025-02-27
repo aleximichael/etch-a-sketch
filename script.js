@@ -30,8 +30,16 @@ function createGrid(defaultSize = 16) {
 const gridBtn = document.querySelector(".grid-size");
 
 gridBtn.addEventListener("click", ()=> {
-    gridContainer.replaceChildren();
-    createGrid(+prompt("How many squares wide?"));
+    newGridSize = +prompt("How many squares wide?");
+    console.log(newGridSize);
+    if (newGridSize > 100) {
+        alert("ERROR. Maximum of 100 squares.");
+    } else if (isNaN(newGridSize)) {
+        alert("ERROR. Please enter a number.");
+    } else {
+        gridContainer.replaceChildren();
+        createGrid(newGridSize);
+    };
 });
 
 createGrid();

@@ -1,29 +1,25 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .grid-container {
     margin: 2vw auto;
     display: flex;
     max-width: 700px;
+    border: 0.05em solid black;
 }
 
 .col-container {
     flex: auto;
     display: flex; 
-    border-top: 0.1em solid black;
-    border-right: 0.1em solid black;
     flex-direction: column; 
-}
-
-.col-1 {
-    border-left: 0.1em solid black;
 }
 
 .grid {
     aspect-ratio: 1/1;
-    border-bottom: 0.1em solid black;
+    border: 0.05em solid black;
 }
 
 button {

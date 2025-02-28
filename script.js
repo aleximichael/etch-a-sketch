@@ -9,12 +9,10 @@ grid.classList.add("grid");
 function createGrid(defaultSize = 16) {
     for (let i = 1; i < defaultSize+1; i++) {
         let currCol = column.cloneNode(true);
-        currCol.classList.add("col-" + i);
         gridContainer.appendChild(currCol);
     
         for (let j = 1; j < defaultSize+1; j++) {
-            currGrid = grid.cloneNode(true);
-            currCol.appendChild(currGrid);
+            currCol.appendChild(grid.cloneNode(true));
         };
     };
 

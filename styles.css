@@ -5,8 +5,9 @@
 }
 
 .grid-container {
-    margin: 2vw;
+    margin: 2vw auto;
     display: flex;
+    max-width: 600px;
 }
 
 .col-container {

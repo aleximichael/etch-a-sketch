@@ -25,7 +25,7 @@ function createGrid(defaultSize = 16) {
     grids.forEach((grid) => {
         grid.addEventListener("mouseover", () => {
             grid.style.backgroundColor = getRandomColour(alpha);
-            alpha < 1 ? alpha += 0.1 : alpha -= 1;
+            alpha < 1 ? alpha += 0.1 : alpha = 0;
         });
     });
 }

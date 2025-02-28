@@ -1,21 +1,21 @@
 const gridContainer = document.querySelector(".grid-container");
 
-const col = document.createElement("div");
+const column = document.createElement("div");
 const grid = document.createElement("div");
 
-col.classList.add("col-container");
+column.classList.add("col-container");
 grid.classList.add("grid");
 
 function createGrid(defaultSize = 16) {
     for (let i = 1; i < defaultSize+1; i++) {
-        let currCol = col.cloneNode(true);
+        let currCol = column.cloneNode(true);
         currCol.classList.add("col-" + i);
         gridContainer.appendChild(currCol);
     
         for (let j = 1; j < defaultSize+1; j++) {
             currGrid = grid.cloneNode(true);
             currCol.appendChild(currGrid);
-        }
+        };
     };
 
     const grids = document.querySelectorAll(".grid");
@@ -25,7 +25,7 @@ function createGrid(defaultSize = 16) {
     grids.forEach((grid) => {
         grid.addEventListener("mouseover", () => {
             grid.style.backgroundColor = getRandomColour(alpha);
-            alpha < 1 ? alpha+=0.1 : alpha-=1;
+            alpha < 1 ? alpha += 0.1 : alpha -= 1;
         });
     });
 }

@@ -10,4 +10,4 @@ This is a project to build a basic "Etch-A-Sketch" game. The project was complet
 
 The core focus of the project was to practice using basic **HTML, CSS, and JavaScript**.
 
-As the user hovers their mouse over a grid element, it will change to a random colour. The colours increase in opacity by 0.1 each grid. Once the opacity reaches 1, it resets to 0. The user can adjust the size of the grid up to a 100x100 grid.
+The user can: 1) Adjust the size of the grid up to a 100x100 grid, 2) Reset the grid, and 3) Change the grid from colour from black to multi-coloured

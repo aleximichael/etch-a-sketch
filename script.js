@@ -19,8 +19,8 @@ function createGrid(numSquares = 16) {
     let colourToggle = false;
 
     colourBtn.addEventListener("click", () => {
-        colourToggle = true;
-    })
+        colourToggle = !colourToggle;
+    });
 
     let grids = document.querySelectorAll(".square");
 
